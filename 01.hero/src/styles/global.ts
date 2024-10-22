@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-
+import Bkg1 from "../assets/background-1.svg";
+import Bkg2 from "../assets/background-2.svg";
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -15,6 +16,8 @@ const GlobalStyle = createGlobalStyle`
     body{
         background-color: #F8FDFF;
         font-family: "Poppins", sans-serif;
+        background: url(${Bkg2}) no-repeat 1010px, url(${Bkg1}) no-repeat 931px;
+        background-size: cover;
     }
 
     button{
